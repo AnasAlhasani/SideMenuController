@@ -53,7 +53,7 @@ public extension UINavigationController {
             self.topViewController?.navigationItem.leftBarButtonItems = newItems
         } else {
             let newItems = computeNewItems(sideMenuController: sideMenuController, button: button, controller: self.topViewController, positionLeft: false)
-            self.topViewController?.navigationItem.rightBarButtonItems = newItems
+            self.topViewController?.navigationItem.leftBarButtonItems = newItems
         }
         
         completion?(button)
